@@ -5,7 +5,7 @@ alias g='git'
 alias st='git status'
 
 # pull for git pull --rebase
-pull () { local HEADHASH=`git describe --always --abbrev=40`; git pull --rebase; echo; PAGER='cat -B' git log --format="%C(yellow)%h%Creset %s (%C(green)%an%Creset)" $HEADHASH..; }
+pull () { local HEADHASH=`git describe --always --abbrev=40`; git pull --rebase; echo; PAGER='cat -B' git log --format="%C(yellow)%h %C(green)%an%C(reset): %s" $HEADHASH.. | sed -nr 's/([^:]+)\:/\1\t/;p'; }
 
 # push for git push
 alias push='git push'
