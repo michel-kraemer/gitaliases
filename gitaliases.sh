@@ -10,6 +10,12 @@ pull () { local HEADHASH=`git describe --always --abbrev=40`; git pull --rebase;
 # push for git push
 alias push='git push'
 
+# commit for git commit
+alias commit='git commit'
+
+# log for git log
+alias log='git log'
+
 # verbose add
 add () { git add -v $*; git status; }
 
