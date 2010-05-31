@@ -5,7 +5,7 @@ alias g='git'
 alias st='git status'
 
 # pull for git pull --rebase
-pull () { local HEADHASH=`git describe --always --abbrev=40`; git pull --rebase; echo; PAGER='cat -B' git log --format="%C(yellow)%h %C(green)%an%C(reset): %s" $HEADHASH.. | sed -nr 's/([^:]+)\:/\1\t/;p'; }
+pull () { local HEADHASH=`git describe --always --abbrev=40`; git pull --rebase $*; echo; PAGER='cat -B' git log --format="%C(yellow)%h %C(green)%an%C(reset): %s" $HEADHASH.. | sed -nr 's/([^:]+)\:/\1\t/;p'; }
 
 # push for git push
 alias push='git push'
@@ -15,6 +15,9 @@ alias commit='git commit'
 
 # log for git log
 alias log='git log'
+
+# stash for git stash
+alias stash='git stash'
 
 # verbose add
 add () { git add -v $*; git status; }
