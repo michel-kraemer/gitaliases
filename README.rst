@@ -7,8 +7,8 @@ user's life easier. The commands have been tested under
 `msysgit <http://code.google.com/p/msysgit>`_ but they should work
 on other platforms too.
 
-Usage
------
+Installation
+------------
 
 Clone the repository into your home directory::
 
@@ -18,6 +18,62 @@ Clone the repository into your home directory::
 Include ``gitaliases.sh`` in your ``.bashrc``::
 
   echo source ~/gitaliases/gitaliases.sh >> ~/.bashrc
+
+Usage
+-----
+
+The following aliases are provided:
+
+``add``
+  Verbose add (executes ``git add -v`` and then ``git status``). All
+  parameters will be forwarded to ``git add``.
+  
+  `Example:`
+    ``add -p foobar.txt``
+``branch``
+  Alias for ``git branch``
+``checkout``
+  Alias for ``git checkout``
+``cherry-pick``
+  Alias for ``git cherry-pick``
+``commit``
+  Alias for ``git commit``
+``fetch``
+  Alias for ``git fetch``
+``g``
+  Alias for ``git``
+``gadd``
+  Pipes the output of ``git ls-files`` to ``grep`` to add only those
+  files that match a given pattern. All parameters (including the
+  pattern) will be forwarded to grep. Like ``add`` this command is
+  verbose and calls ``git status`` at the end.
+
+  `Example:`
+    ``gadd -i '\.java$'``
+``greset``
+  Pipes the output of ``git ls-files`` to ``grep`` to reset only those
+  files that match a given pattern. All parameters (including the
+  pattern) will be forwarded to grep. Like ``reset`` this command
+  calls ``git status`` at the end.
+
+  `Example:`
+    ``greset 'bin'``
+``log``
+  Alias for ``git log``
+``merge``
+  Alias for ``git merge``
+``pull``
+  Executes ``git pull --rebase`` and then displays all commits since
+  the last pull in a short format.
+``push``
+  Alias for ``git push``
+``reset``
+  Verbose reset (executes ``git reset -v`` and then ``git status``).
+  All parameters will be forwarded to ``git reset``.
+``st``
+  Alias for ``git status``
+``stash``
+  Alias for ``git stash``
 
 License
 -------
