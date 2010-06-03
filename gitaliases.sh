@@ -19,6 +19,21 @@ alias log='git log'
 # stash for git stash
 alias stash='git stash'
 
+# checkout for git checkout
+alias checkout='git checkout'
+
+# brach for git branch
+alias branch='git branch'
+
+# fetch for git fetch
+alias fetch='git fetch'
+
+# merge for git merge
+alias merge='git merge'
+
+# cherry-pick for git cherry-pick
+alias cherry-pick='git cherry-pick'
+
 # verbose add
 add () { git add -v $*; git status; }
 
