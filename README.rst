@@ -28,8 +28,8 @@ The following aliases are provided:
   Verbose add (executes ``git add -v`` and then ``git status``). All
   parameters will be forwarded to ``git add``.
   
-  `Example:`
-    ``add -p foobar.txt``
+  | `Example:`
+  |   ``add -p foobar.txt``
 ``branch``
   Alias for ``git branch``
 ``checkout``
@@ -47,17 +47,17 @@ The following aliases are provided:
   files that match a given pattern. All parameters (including the
   pattern) will be forwarded to grep. Like ``add`` this command is
   verbose and calls ``git status`` at the end.
-
-  `Example:`
-    ``gadd -i '\.java$'``
+  
+  | `Example:`
+  |  ``gadd -i '\.java$'``
 ``greset``
   Pipes the output of ``git ls-files`` to ``grep`` to reset only those
   files that match a given pattern. All parameters (including the
   pattern) will be forwarded to grep. Like ``reset`` this command
   calls ``git status`` at the end.
-
-  `Example:`
-    ``greset 'bin'``
+  
+  | `Example:`
+  |  ``greset 'bin'``
 ``log``
   Alias for ``git log``
 ``merge``
@@ -74,6 +74,11 @@ The following aliases are provided:
   Alias for ``git status``
 ``stash``
   Alias for ``git stash``
+
+Acknowledgements
+----------------
+
+Special thanks to Simon Templer and Simon Thum for their input!
 
 License
 -------
