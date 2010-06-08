@@ -67,6 +67,8 @@ The following aliases are provided:
   the last pull in a short format.
 ``push``
   Alias for ``git push``
+``rebase``
+  Alias for ``git rebase``
 ``reset``
   Verbose reset (executes ``git reset -v`` and then ``git status``).
   All parameters will be forwarded to ``git reset``.
