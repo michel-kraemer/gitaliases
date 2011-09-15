@@ -31,3 +31,5 @@ gadd () { git ls-files -co --exclude-standard | grep $* | xargs git add -v; git 
 # 'git reset' with 'git ls-files' and grep
 greset () { git ls-files | grep $* | xargs git reset; git status; }
 
+# Enable auto-completion for aliased 'git' command
+complete -o default -o nospace -F _git g
