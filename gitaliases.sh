@@ -25,7 +25,7 @@ gadd () { git add -v $*; git status; }
 greset () { git reset $*; git status; }
 
 # 'git add' with 'git ls-files' and grep
-# usage like grep - example: gadd 'readme.txt'
+# usage like grep - example: glsadd 'readme.txt'
 glsadd () { git ls-files -co --exclude-standard | grep $* | xargs git add -v; git status; }
 
 # 'git reset' with 'git ls-files' and grep
