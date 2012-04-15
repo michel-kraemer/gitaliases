@@ -28,6 +28,8 @@ The following aliases are provided:
 
 ``g``
   Alias for ``git``
+``gcl``
+  Alias for ``git clone``
 ``gadd``
   Verbose add (executes ``git add -v`` and then ``git status``). All
   parameters will be forwarded to ``git add``.
