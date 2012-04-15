@@ -4,8 +4,7 @@ Gitaliases
 
 These are some bash aliases and functions that make the average git
 user's life easier. The commands have been tested under
-`msysgit <http://code.google.com/p/msysgit>`_ on Windows and with git version 1.7.0.4 from the official Ubuntu repository on Linux,
- but they should work on other platforms too.
+`msysgit <http://code.google.com/p/msysgit>`_ on Windows and with git version 1.7.0.4 from the official Ubuntu repository on Linux, but they should work on other platforms too.
 
 Installation
 ------------
