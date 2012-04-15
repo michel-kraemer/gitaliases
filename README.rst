@@ -24,57 +24,59 @@ Usage
 
 The following aliases are provided:
 
-``add``
+The following aliases are provided:
+
+``g``
+  Alias for ``git``
+``gadd``
   Verbose add (executes ``git add -v`` and then ``git status``). All
   parameters will be forwarded to ``git add``.
   
   | `Example:`
-  |   ``add -p foobar.txt``
-``branch``
+  |   ``gadd -p foobar.txt``
+``gbra``
   Alias for ``git branch``
-``checkout``
+``gche``
   Alias for ``git checkout``
-``cherry-pick``
+``gcherpi``
   Alias for ``git cherry-pick``
-``commit``
+``gcom``
   Alias for ``git commit``
-``fetch``
+``gfet``
   Alias for ``git fetch``
-``g``
-  Alias for ``git``
-``gadd``
+``glsadd``
   Pipes the output of ``git ls-files`` to ``grep`` to add only those
   files that match a given pattern. All parameters (including the
   pattern) will be forwarded to grep. Like ``add`` this command is
   verbose and calls ``git status`` at the end.
   
   | `Example:`
-  |  ``gadd -i '\.java$'``
-``greset``
+  |  ``glsadd -i '\.java$'``
+``glsreset``
   Pipes the output of ``git ls-files`` to ``grep`` to reset only those
   files that match a given pattern. All parameters (including the
   pattern) will be forwarded to grep. Like ``reset`` this command
   calls ``git status`` at the end.
   
   | `Example:`
-  |  ``greset 'bin'``
-``log``
+  |  ``glsreset 'bin'``
+``glog``
   Alias for ``git log``
-``merge``
+``gmer``
   Alias for ``git merge``
-``pull``
+``gpull``
   Executes ``git pull --rebase`` and then displays all commits since
   the last pull in a short format.
-``push``
+``gpush``
   Alias for ``git push``
-``rebase``
+``greb``
   Alias for ``git rebase``
-``reset``
+``greset``
   Verbose reset (executes ``git reset -v`` and then ``git status``).
   All parameters will be forwarded to ``git reset``.
-``st``
+``gst``
   Alias for ``git status``
-``stash``
+``gsta``
   Alias for ``git stash``
 
 Acknowledgements
